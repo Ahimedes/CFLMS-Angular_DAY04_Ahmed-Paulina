@@ -1,0 +1,27 @@
+h2 {
+    color: #D62D2D;
+    font-size: 3vw;
+}
+
+h5 {
+    font-size: 3vw;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+#but {
+    font-size: 2vw;
+    border: none;
+    border-radius: 5%;
+    width: 8vw;
+    height: 3vw;
+    transition: width 500ms, height 500ms;
+}
+
+#but:hover {
+    background-color: tomato;
+    width: 9vw;
+    height: 4vw;
+}

@@ -1,0 +1,15 @@
+<h2 class="text-center p-4">The best girl's advices</h2>
+
+<div class="d-flex justify-content-center" *ngFor="let x of posts ; index as xId">
+    <div class="card w-75 m-4 bg-white p-3">
+        <img src="{{x.image}}" class="card-img-top" alt="...">
+        <div class="row bg-white">
+            <div class="card-body bg-white">
+                <h5 class="card-title bg-white">{{ x.title }}</h5>
+                <p class="card-text bg-white">Author: {{x.author}}</p>
+                <p class="card-text bg-white"><small class="text-muted bg-white">{{x.date}}, {{x.time}}, {{x.place}}</small></p>
+            </div>
+            <button id="but" class="mt-auto mr-3"><a [routerLink]="['/posts', xId]">More</a></button>
+        </div>
+    </div>
+</div>
