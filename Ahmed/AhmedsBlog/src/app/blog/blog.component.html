@@ -1,0 +1,44 @@
+<!-- <div *ngFor="let location of locations">
+    <p id="{{location.name}}">{{location.name}}</p>
+    <p>{{location.text}}</p>
+</div> -->
+
+<!-- <div class="row">
+    <div class="col-3">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <div *ngFor="let location of locations">
+                <a class="nav-link active" id="v-pills-{{location.name}}-tab" data-toggle="pill"
+                    href="#v-pills-{{location.name}}" role="tab" aria-controls="v-pills-{{location.name}}">{{location.name}}</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-9">
+        <div class="tab-content" id="v-pills-tabContent">
+            <div *ngFor="let location of locations">
+                <div class="tab-pane fade" id="v-pills-{{location.name}}" role="tabpanel"
+                    aria-labelledby="v-pills-{{location.name}}-tab">
+                    <h2 class="text-center">{{location.name}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<h2>Locations</h2>
+<div class="row">
+<div class="m-3" *ngFor="let location of locations; index as locationId">
+
+    <h3>
+        <p>
+        <a [routerLink]="['/locations', locationId]">
+            {{ location.name }}
+        </a>
+        </p>
+    </h3>
+
+    <p>
+        <img class="logo" style="width: 30vw; height: 20vw;" src="{{ location.teaser }}">
+    </p>
+</div>
+</div>
