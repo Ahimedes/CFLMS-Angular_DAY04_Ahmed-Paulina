@@ -13,6 +13,7 @@ p {
 
 #but {
     font-size: 2vw;
+    background-color: #FBD632;
     border: none;
     border-radius: 5%;
     width: 8vw;
@@ -24,4 +25,9 @@ p {
     background-color: tomato;
     width: 9vw;
     height: 4vw;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
